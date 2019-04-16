@@ -20,17 +20,13 @@ El procediment serà el següent:
     vagrant box add generic/ubuntu1804
 ```
 
-Aquí triareu el proveïdor (provider) que utilitzeu (VirtualBox o Parallels). Un cop fet això, el box es descarregarà. Si us pregunteu on es guarda aquest box, la resposta, és que s'ha creat una carpeta .Vagrant en el vostre sistema.
+Abans de baixar, caldrà que trieu el proveïdor (provider) que vulgueu utilitzar (VirtualBox o Parallels). Un cop fet això, el box es descarregarà. Si us pregunteu on es guarda aquest box, la resposta, és que s'ha creat una carpeta .Vagrant en el vostre sistema.
 
 Podem comprovar que la descàrrega s'ha realitzat exitosament llistant els box descarregats a la vostra màquina:
 
 ```
     vagrant box list
 ```
+Amb aquesta comanda, se'ns mostren els boxes que tenim descarregats al nostre sistema. Més endavant, veurem com podem gestionar aquests boxes.
 
 
-Evidentment, al llarg del temps si es treballa amb diferents entorns, podem tenir diversos boxes emmagatzemats, alguns d'ells que ja no utilitzem, per aquest motiu si voleu eliminar boxes que no utilitzeu disposeu de la comanda:
- 
-```
-    vagrant box remove nom_del_box
-```
