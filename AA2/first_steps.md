@@ -51,7 +51,7 @@ or not commonly used. To see all subcommands, run the command
 ```
 Per les diferents comandes podem obtenir l'ajuda disponible afegint el "-h" al final, així per exemple, si volem saber amb més detall les opcions de gestió amb els boxes, faríem:
 
-````
+```
     vagrant box -h
 ```
 
