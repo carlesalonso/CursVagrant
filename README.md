@@ -9,9 +9,9 @@
 
 1. [Instal·lació](AA2/install.md)
 1. [Primers pasos](AA2/first_steps.md)
+1. [Definició dels entorns: Vagrantfile](AA2/vagrantfile.md)
 1. [Synced folders](AA2/sync_folder.md)
 1. [Gestió de boxes](AA2/boxes.md)
-1. [Definició dels entorns: Vagrantfile](AA2/vagrantfile.md)
 1. [Us de la línia de comandes](AA2/cli.md)
 
 ### AA3 Configuracions avançades
