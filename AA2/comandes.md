@@ -4,11 +4,13 @@ La documentació oficial la teniu disponible a:
 
 [docs.vagrantup.com](http://docs.vagrantup.com)
 
+Ara veurem les primeres comandes de vagrant que necessitarem per començar a treballar, d'altres les anirem veient en els temes posteriors.
+
 ## Help
 
 Vagrant funciona sobre terminal i té tota una sèrie de comandes i arguments. Per veure les opcions disponibles, és molt útil consultar l'ajuda:
 
-```
+```bash
 vagrant -h
 
 Usage: vagrant [options] <command> [<args>]
@@ -68,6 +70,30 @@ També podem buscar ajuda específica per una comanda, per exemple:
 ```bash
     vagrant box add -h
 ```
+
+## version
+
+Aquesta comanda serveix per conèixer la versió de Vagrant que heu instal·lat i us informa si és la darrera versió disponible.
+
+```bash
+    $vagrant version
+        Installed Version: 2.2.4
+        Latest Version: 2.2.4
+```
+
+## box
+
+La comanda *box* permet gestionar els diferents boxes en el nostre sistema. Es podran instal·lar, actualitzar, esborrar i eliminar versions antigues. Tot i que més endavant ho veurem amb més detall, ara explicarem les opcions més habituals.
+
+* *vagrant box add* nom_del_box: descarrega el box al nostre equip per poder ser utilitzat.
+
+* *vagrant box list*: llista tots els boxes que tenim descarregats a l'equip.
+
+* *vagrant box outdated*: permet comprovar si el box està desactualitzat.
+
+* *vagrant box prune*: esborra les versions antigues de boxes instal·lats. És important tenir clar que quan es baixen les actualitzacions, no s'esborren per defecte els boxes anteriors. Per tant, és convenient fer aquesta acció per alliberar espai al disc.
+
+* *vagrant box remove* nom_del_box: esborra el box indicat.
 
 ## init
 
@@ -164,3 +190,55 @@ La diferència, és que ara a la línia corresponent al box, ja es defineix el q
  ```ruby
      config.vm.box = "generic/alpine39"
 ```
+
+Ara bé, sovint no necessitem totes les opcions a l'arxiu, si no que simplement volem configurar nosaltres mateixos allò que necessitem. Per aconseguir això, utilitzarem l'argument *"-m"*:
+
+```bash
+    vagrant init -m generic/alpine39
+```
+
+## status i global-status
+
+ Serveix per conèixer l'estat de la màquina vagrant, de forma que ens dirà si es troba funcionant *running* o aturada *poweroff* o pausada *halted*.
+
+ En el cas de global-status el que obtenim és l'estat de totes les màquines vagrant que tinguem al nostre equip.
+
+## up
+
+Amb aquesta comanda arrancarem un etorn Vagrant. Aquest procés pot implicar descarregar el box si no es troba o si no està actualitzat. Un cop fet això desplegarà l'entorn amb les opcions definides a l'arxiu Vagrantfile i finalment aprovisionarà la màquina.
+
+Disposa de diversos arguments, però pel funcionament bàsic no els utilitzarem de manera que els comentarem més endavant.
+
+# halt
+
+Atura la màquina, de la mateixa manera que podem aturar una màquina virtual des del virtualitzador. Quan una màquina no s'atura, per exemple, per un procés que no li permet, tenim l'opció de forçar l'aturada, però hem de tenir clar que es poden perdre dades (equival a desconnectar l'alimentació d'un ordinador).
+
+```bash
+    vagrant halt
+    vagrant halt --force
+```
+
+## suspend
+
+A diferència de la comanda *halt* aquí es guarda l'estat de la màquina, de manera que quan es torni a iniciar estarà exactament al mateix estat on es va deixar. Equival a pausar la màquina al virtualitzador.
+
+## resume
+
+Servirà per recuperar una màquina que ha estat suspesa.
+
+## destroy
+
+Atura i elimina la màquina Vagrant. Això se sol fer periòdicament perquè ja veurem que no guardarem dades persistents a dins la màquina i d'aquesta manera alliberem espai i a més assegurem de treballar sobre una instància fresca.
+
+## reload
+
+Sovint modificarem l'arxiu Vagrantfile amb la instància Vagrant executant-se. Si volem aplicar els canvis utilitzarem aquesta comanda, que bàsicament fa un *halt* i un *up* però aplicar els canvis. En fer la recàrrega podem triar aplicar l'aprovisionament o no, això es fa per si no volem tornar a executar un script d'aprovisionament perquè ja s'ha fet anteriorment. 
+
+```bash
+    vagrant reload --provision
+    vagrant reload --no-provision
+```
+
+### ssh
+
+Si necessitem entrar dins la màquina Vagrant, el mètode per defecte serà mitjançant el protocol ssh. A més es genera el parell de claus pública/privada de manera que no caldrà validar-se amb usuari/contrasenya. L'usuari dins la instància s'anomena **vagrant**.
