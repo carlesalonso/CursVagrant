@@ -81,6 +81,14 @@ Podem veure les instàncies virtuals que tenim aixecades amb la comanda:
 ````
     vagrant status
 ````
+Pel que fa a la xarxa, per defecte al treballar amb VirtualBox com proveïdor, es configura en NAT automàticament, d'aquesta manera, la instància virtual tindrà connectivitat a l'exterior, però ja veurem com ho podem modificar per tal de tenir les opcions de xarxa privada (només tindria visibiliat amb l'equip hoste) o amb configuració pública (equivalent a la xarxa en pont de VirtualBox). 
+
+Ara bé, un equip virtual en NAT no tindria connectivitat amb la màquina hoste, per solucionar això s'utilitza la redirecció de ports que permet mapejar ports de la instància virtual a ports de la màquina física. Per defecte, es mapeja el port 22 de la instància virtual al port 2222 per permetre la connexió ssh. Si necessitem mapejar altres ports, és tant senzill com editar l'arxiu Vagrantfile i afegir una línia com aquesta:
+```
+    config.vm.network "forwarded_port", guest: 80, host: 8080
+```
+En aquest cas, es redirigeix el port 80 de la instància virtual cap el port 8080 de la màquina física. D'aquesta manera, si estem treballant amb codi web, podem verificar el resultat directament al navegador posant com URI *http://localhost:8080/ruta*.
+
 Podem connectar-nos a la màquina per treballar-hi dins, aquí l'opció per defecte és el protocol ssh (tot i que també es poden configurar connexions via RDP). Per connectar-s'hi no cal entrar ni usuari ni password, l'usuari amb el que es logueja és __vagrant__, tot i que podem elevar privilegis un cop dins. La comanda per connectar-nos és:
 ````
 	vagrant ssh
