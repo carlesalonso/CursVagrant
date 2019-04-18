@@ -60,4 +60,6 @@ Recarregarem la configuració amb:
 
 Un cop haguem acabat de treballar tenim diverses opcions per finalitzar com s'ha vist al punt anterior.
 
-[Tornar a índex](../readme.md)          [Definició d'entorns: Vagrantfile](vagrantfile.md)
+[<< Tornar a índex](../readme.md)
+
+[>> AA2. Configuració arxiu Vagrantfile](vagrantfile.md)

@@ -243,4 +243,6 @@ Sovint modificarem l'arxiu Vagrantfile amb la instància Vagrant executant-se. S
 
 Si necessitem entrar dins la màquina Vagrant, el mètode per defecte serà mitjançant el protocol ssh. A més es genera el parell de claus pública/privada de manera que no caldrà validar-se amb usuari/contrasenya. L'usuari dins la instància s'anomena **vagrant**.
 
-[Tornar a índex](../readme.md)          [Primeres pases](first_steps.md)
+[<< Tornar a índex](../readme.md)
+
+[>> Primeres pases](first_steps.md)

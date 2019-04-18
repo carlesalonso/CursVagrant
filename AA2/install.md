@@ -30,4 +30,6 @@ Podem comprovar que la descàrrega s'ha realitzat exitosament llistant els box d
 
 Amb aquesta comanda, se'ns mostren els boxes que tenim descarregats al nostre sistema. Més endavant, veurem com podem gestionar aquests boxes.
 
-[Tornar a índex](../readme.md)          [Comandes bàsiques](comandes.md)
+[<< Tornar a índex](../readme.md)
+
+[>> AA2. Comandes](comandes.md)
