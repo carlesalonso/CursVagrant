@@ -5,13 +5,15 @@ Veurem amb un exemple com desplegar el nostre primer projecte amb Vagrant.
 ## El nostre primer projecte
 
 Per crear el nostre primer projecte, seguirem les següent passes, recordeu que heu creat una carpeta Vagrant que serà on crearem tota les carpetes dels projectes:
-````
+
+```bash
     mkdir primerprojecte
     cd primerprojecte
     vagrant init -m generic/ubuntu1804
-````
+```
 
 Per arrancar aquesta instància farem:
+
 ```bash
     vagrant up
 ```
@@ -28,9 +30,9 @@ En aquest cas, es redirigeix el port 80 de la instància virtual cap el port 808
 
 Podem connectar-nos a la màquina per treballar-hi dins, aquí l'opció per defecte és el protocol ssh (tot i que també es poden configurar connexions via RDP). Per connectar-s'hi no cal entrar ni usuari ni password, l'usuari amb el que es logueja és __vagrant__, tot i que podem elevar privilegis un cop dins. La comanda per connectar-nos és:
 
-````
+```bash
     vagrant ssh
-````
+```
 
 Per evitar conflictes amb l'equip hoste o amb altres instàncies virtuals funcionant, el protocol SSH que escolta pel port 22 a la màquina virtual es mapeja a un altre port a la màquina física, per defecte al port 2222, però ja veurem que es pot modificar i com té un sistema per evitar conflictes entre sistemes.
 
@@ -40,14 +42,14 @@ Ja veurem més endavant més informació de com mapejar entre màquina física i
 
 Per mapejar una carpeta a més de la per defecte, simplement cal obrir l'arxiu Vagrantfile i afegir la següent línia indicant la carpeta del vostre ordinador que voleu compartir (compte amb el doble \\) i la carpeta destinació dins la VM:
 
-````
+```bash
     config.vm.synced_folder "C:\\Users\\usuari\Documents\\html", "/var/html"
-````
+```
 
 En el cas que hi treballeu des d'un ordinador *nix:
 
 ```bash
-	config.vm.synced_folder "/home/usuari/html", "/var/html"
+    config.vm.synced_folder "/home/usuari/html", "/var/html"
 ```
 
 Recarregarem la configuració amb:
@@ -56,5 +58,6 @@ Recarregarem la configuració amb:
     vagrant reload
 ```
 
+Un cop haguem acabat de treballar tenim diverses opcions per finalitzar com s'ha vist al punt anterior.
 
-Un cop haguem acabat de treballar tenim diverses opcions per finalitzar com s'ha
+[Tornar a índex](../readme.md)                                                       [Definció d'entorns: Vagrantfile](vagrantfile.md)
