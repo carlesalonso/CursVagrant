@@ -39,3 +39,5 @@ Utilizant l'espai de noms *config.vm*, s'especificaran les configuracions de la 
 En aquest bloc es defineixen els paràmetres de la connexió ssh, per exemple, la definició del certificat per fer la connexió, l'opció de connexió via usuari/contrasenya, el port, etc. Normalment, no caldrà que ens preocupem de modificar aquest bloc de l'arxiu.
 
 La part final de la configuració correspon als aprovisionadors, que també veurem amb més detall, però que ara per donar una petita pinzellada, permeten configurar la màquina creada. Això ens permet no haver de tenir diferents boxes d'Ubuntu segons el que volem instal·lar, si no un únic box (amb l'estalvi d'espai que això implica) i definir les configuracions internes mitjançant aquest aprovisionament.
+
+[Tornar a índex](../readme.md)

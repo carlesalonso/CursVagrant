@@ -32,4 +32,4 @@ Un dels aspectes més potents de Vagrant és la flexibilitat a l'hora d'utilitza
 
 De tota manera, podem descarregar un box simplement indicant la URL sense necessitat que estigui allotjat a Vagrant Cloud.
 
-[Tornar a índex](../readme.md)                                                                        [Instal·lació](../AA2/install.md)
+[Tornar a índex](../readme.md)          [Instal·lació](../AA2/install.md)
