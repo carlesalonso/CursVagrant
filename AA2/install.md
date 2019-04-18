@@ -16,7 +16,7 @@ Com a primer pas, baixarem un box, però fent-ho d'una forma una mica diferent d
 
 El procediment serà el següent:
 
-```
+```bash
     vagrant box add generic/ubuntu1804
 ```
 
@@ -24,9 +24,8 @@ Abans de baixar, caldrà que trieu el proveïdor (provider) que vulgueu utilitza
 
 Podem comprovar que la descàrrega s'ha realitzat exitosament llistant els box descarregats a la vostra màquina:
 
-```
+```bash
     vagrant box list
 ```
+
 Amb aquesta comanda, se'ns mostren els boxes que tenim descarregats al nostre sistema. Més endavant, veurem com podem gestionar aquests boxes.
-
-
