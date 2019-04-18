@@ -2,7 +2,7 @@
 
 Vagrant és una eina pensada per simplificar la feina de crear entorns virtuals de desenvolupament. Quan es programa, és molt important desenvolupar en un entorn amb les mateixes característiques que el de producció, per exemple, quan es creen aplicacions web en PHP, és necessari utilitzar la mateixa versió tant en desenvolupament com en producció, per evitar problemes de incompatibilitats, instruccions que canvien, etc.
 
-![Works in my machine](../pics/WorkInMyMachine.jpg)
+![Works in my machine](../pics/WorkInMyMachine.png)
 
 El problema és que si treballem amb diferents entorns de producció, caldria anar modificant les configuracions del nostre ordinador per adaptar-lo als diferents casos. La solució per evitar això, és la virtualització. Usant màquines virtuals puc recrear en el meu equip un sistema que tingui les mateixes característiques: sistema operatiu, framework, etc. que la màquina on finalment s'executarà l'aplicació.
 
