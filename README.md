@@ -7,7 +7,7 @@
 
 ### AA1 Introducció
 
-1. [Introducció a Vagrant (PDF))](AA1/IntroVagrant.pdf)
+1. [Introducció a Vagrant](AA1/intro.md)
 
 ### AA2 Ús bàsic de Vagrant
 
