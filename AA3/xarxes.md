@@ -2,7 +2,7 @@
 
 Aquí veurem les diferents opcions a nivell de xarxa que ofereix Vagrant. Quan usem VirtualBox o VMware com virtualitzadors, el mode de xarxa per defecte és NAT, que significa que la instància virtual pot sortir a Internet a través de la màquina física, però sense que es puguin comunicar entre elles. És el mode més senzill perquè el virtualitzador proporciona configuració de xarxa automàtica als equips client.
 
-## Renviament de ports
+## Reenviament de ports
 
 Com hem dit, en el mode per defecte la instància virtual és invisible tant a l'equip hoste, com òbviament a la resta de la xarxa. Si volem connectar-nos a la màquina virtual perquè estem implementant un servidor web, ldap o el que sigui, necessitem fer visibles els ports concrets de la màquina Vagrant. Per fer això, usarem el reenviament de ports. El procediment és força senzill, editarem l'arxiu Vangrantfile i afegirem la seüent línia a la configuració:
 
