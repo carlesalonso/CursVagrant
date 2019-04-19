@@ -10,16 +10,16 @@
 
 ### AA2 Ús bàsic de Vagrant
 
-1. [Instal·lació](AA2/install.md)
-1. [Comandes bàsiques](AA2/comandes.md)
-1. [Primers pasos](AA2/first_steps.md)
-1. [Definició dels entorns: Vagrantfile](AA2/vagrantfile.md)
+1. [Instal·lació](AA2/T1)
+1. [Comandes bàsiques](AA2/T2)
+1. [Primers pasos](AA2/T3)
+1. [Definició dels entorns: Vagrantfile](AA2/T4)
 
 ### AA3 Configuracions avançades
 
-1. [Modes de xarxa](AA3/xarxes.md)
-1. [Aprovisionament amb scripts](AA3/scripting.md)
-1. [Entorns amb més d'una màquina](AA3/multimaquina.md)
-1. [Gestió dels boxes](AA3/boxes.md)
-1. [Carpetes sincronitzades](AA3/folders.md)
-1. [Aprovisionadors](AA3/provisioners.md)
+1. [Modes de xarxa](AA3/T1)
+1. [Aprovisionament amb scripts](AA3/T2)
+1. [Entorns amb més d'una màquina](AA3/T3)
+1. [Gestió dels boxes](AA3/T4)
+1. [Carpetes sincronitzades](AA3/T5)
+1. [Aprovisionadors](AA3/T6)
