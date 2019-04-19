@@ -26,6 +26,8 @@ Utilizant l'espai de noms *config.vm*, s'especificaran les configuracions de la 
 
 * *config.vm.box_version*: quan tenim diverses versions d'un box, podem triar quina versió utilitzem. Pot ser útil per fer proves de compatibilitat.
 
+* *config.vm.box_check_update*: aquesta permet definir si volem que Vagrant comprovi si s'actualitzat el box cada cop que arranquem la instància. Això que per una banda és interessant perquè ens assegura tenir el box actualitzat, comporta dues pegues: els box es van descarregant però no se sobreescriuen i segon, pot fer que l'arrancada sigui molt lenta.
+
 * *config.vm.communicator*: configura quin serà el mecanisme que utilitzarà per permetre iniciar sessió a la màquina Vagrant. Per defecte és el protocol ssh, però es pot utilitzar també *winrm* (escriptori remot) per màquines Windows.
 
 * *config.vm.guest*: permet indicar quin SO tindrà la màquina Vagrant. Normalment, Vagrant ja és capaç de detectar automàticament el sistema.
