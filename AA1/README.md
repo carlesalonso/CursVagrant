@@ -14,7 +14,7 @@ Seguint la filosofia de definir la infraestructura com codi (IaC), Vagrant desen
 
 Per entendre el model de funcionament de Vagrant, aquest esquema és força clarificador:
 
-![Vagrant map](../pics/vagrantMap.png)
+![Vagrant map](pics/vagrantMap.png)
 
 Els *providers* són els sistemes on s'executarà l'aplicació, que com en esmentat abans són els virtualitzadors més habituals.
 
@@ -28,10 +28,10 @@ Per últim, Vagrant ens proporciona un conjunt de comandes per gestionar el proc
 
 Un dels aspectes més potents de Vagrant és la flexibilitat a l'hora d'utilitzar boxes. Els podem crear nosaltres, però Hashicorp, la companyia que dona suport a Vagrant, ofereix un cloud d'on podrem descarregar i publicar boxes. Té diferents plans des del gratuït per publicar box públics a de pagament on podem tenir els nostres boxes de forma privada.
 
-![Vagrant Cloud](../pics/vagrantCloud.png)
+![Vagrant Cloud](pics/vagrantCloud.png)
 
 De tota manera, podem descarregar un box simplement indicant la URL sense necessitat que estigui allotjat a Vagrant Cloud.
 
-[<< Tornar a índex](../readme.md)
+[<< Tornar a índex principal](../README.md)
 
 [>> AA2. Instal·lació](../AA2/install.md)
