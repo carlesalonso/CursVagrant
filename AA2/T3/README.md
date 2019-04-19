@@ -52,6 +52,12 @@ En el cas que hi treballeu des d'un ordinador *nix:
     config.vm.synced_folder "/home/usuari/html", "/var/html"
 ```
 
+Amb alguns box ens podem trobar que la redirecció de la carpeta per defecte no funcioni, si la això passa:
+
+```bash
+    config.vm.synced_folder ".", "/vagrant"
+```
+
 Recarregarem la configuració amb:
 
 ```bash
