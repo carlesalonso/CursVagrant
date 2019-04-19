@@ -42,7 +42,7 @@ En aquest bloc es defineixen els paràmetres de la connexió ssh, per exemple, l
 
 La part final de la configuració correspon als aprovisionadors, que també veurem amb més detall, però que ara per donar una petita pinzellada, permeten configurar la màquina creada. Això ens permet no haver de tenir diferents boxes d'Ubuntu segons el que volem instal·lar, si no un únic box (amb l'estalvi d'espai que això implica) i definir les configuracions internes mitjançant aquest aprovisionament.
 
-Aquí podeu veure un exemple d'arxiu Vagrantfile bàsic.
+Clicant sobre l'enllaç podeu veure un exemple d'arxiu [Vagrantfile](Vagrantfile) bàsic.
 
 [Tornar a índex AA2](../README.md)
 
