@@ -64,6 +64,6 @@ Si tenim més d'un adaptador de xarxa, en el moment de l'arrancada ens preguntar
 
 També es pot configurar en estàtic, però hi ha paràmetres que cal aprovisionar a la configuració de la màquina.
 
-[<< Tornar a índex](../readme.md)
+[<< Tornar a índex AA3](../README.md)
 
-[>> AA3. Aprovisionament per scripts](scripting.md)
+[>> AA3. Aprovisionament per scripts](../T2)
