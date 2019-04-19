@@ -7,4 +7,4 @@
 1. [Carpetes sincronitzades](T5)
 1. [Aprovisionadors](T6)
 
-[Tornar a pàgina principal](CursVagrant)
+[<< Tornar a índex principal](..)
