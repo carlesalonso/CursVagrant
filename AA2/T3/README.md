@@ -62,4 +62,4 @@ Un cop haguem acabat de treballar tenim diverses opcions per finalitzar com s'ha
 
 [<< Tornar a índex AA2](../README.md)
 
-[>> AA2. Configuració arxiu Vagrantfile](../T4.md)
+[>> AA2. Configuració arxiu Vagrantfile](../T4)

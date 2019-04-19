@@ -58,6 +58,6 @@ Si cal passar arguments, es poden passar de la següent manera:
     end
 ```
 
-[<< Tornar a índex](../readme.md)
+[<< Tornar a índex AA3](../README.md)
 
-[>> AA3. Entorns multimàquina](multimaquina.md)
+[>> AA3. Entorns multimàquina](../T3)
