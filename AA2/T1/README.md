@@ -17,7 +17,7 @@ Com a primer pas, baixarem un box, però fent-ho d'una forma una mica diferent d
 El procediment serà el següent:
 
 ```bash
-    vagrant box add generic/ubuntu1804
+    vagrant box add ubuntu/bionic64
 ```
 
 Abans de baixar, caldrà que trieu el proveïdor (provider) que vulgueu utilitzar (VirtualBox o Parallels). Un cop fet això, el box es descarregarà. Si us pregunteu on es guarda aquest box, la resposta, és que s'ha creat una carpeta .Vagrant en el vostre sistema.

@@ -9,7 +9,7 @@ Per crear el nostre primer projecte, seguirem les següent passes, recordeu que 
 ```bash
     mkdir primerprojecte
     cd primerprojecte
-    vagrant init -m generic/ubuntu1804
+    vagrant init -m ubuntu/bionic64
 ```
 
 Per arrancar aquesta instància farem:

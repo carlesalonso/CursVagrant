@@ -58,7 +58,7 @@ Si tenim més d'un adaptador de xarxa, en el moment de l'arrancada ens preguntar
 
 ```ruby
     Vagrant.configure("2") do |config|
-    config.vm.box = "generic/ubuntu1804"
+    config.vm.box = "ubuntu/bionic64"
     config.vm.network "public_network", type: "dhcp", “bridge: "en0: Wi-Fi (AirPort)”
 ```
 
