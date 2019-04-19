@@ -34,11 +34,15 @@ Utilizant l'espai de noms *config.vm*, s'especificaran les configuracions de la 
 
 * *config.vm.synced_folder*: permet definir les carpetes compartides entre la instància virtual i la màquina física. Per defecte la carpeta del projecte es mapeja com */vagrant* a dins la instància. Aquest aspecte també el tractarem amb més detall més endavant, però al punt anterior ja s'ha vist com mapejar una altra carpeta.
 
+* *config.vm.provider*: aquest bloc serveix per definir les especificacions del provider (virtualitzador). Cada provider suporta diferents valors i configuracions. Per exemple, el més popular VirtualBox, es pot especificar la quantitat de RAM *memory*, el nombre de cores *cpus* i si volem que s'arrenqui el GUI de VirtualBox *gui*.
+
 ## Configuració SSH (config.ssh)
 
 En aquest bloc es defineixen els paràmetres de la connexió ssh, per exemple, la definició del certificat per fer la connexió, l'opció de connexió via usuari/contrasenya, el port, etc. Normalment, no caldrà que ens preocupem de modificar aquest bloc de l'arxiu.
 
 La part final de la configuració correspon als aprovisionadors, que també veurem amb més detall, però que ara per donar una petita pinzellada, permeten configurar la màquina creada. Això ens permet no haver de tenir diferents boxes d'Ubuntu segons el que volem instal·lar, si no un únic box (amb l'estalvi d'espai que això implica) i definir les configuracions internes mitjançant aquest aprovisionament.
+
+Aquí podeu veure un exemple d'arxiu Vagrantfile bàsic.
 
 [Tornar a índex AA2](../README.md)
 
