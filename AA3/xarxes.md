@@ -52,4 +52,18 @@ De la mateixa manera, podem definir la configuració de forma estàtica:
 
 ## Xarxes públiques
 
-És el model que correspon a *l'adaptador pont* de VirtualBox
+És el model que correspon a *l'adaptador pont* de VirtualBox, això vol dir que la màquina Vagrant tindrà una adreça IP de la xarxa local on estiguem. Aquesta configuració és útil si necessitem que siguin visibles des de fora de la màquina física. De la mateixa manera que a la configuració anterior, podrem tenir dues opcions, utilitzar DHCP (sempre que la xarxa disposi d'un servidor de configuració de xarxa) o configuració estàtica.
+
+Si tenim més d'un adaptador de xarxa, en el moment de l'arrancada ens preguntarà, quin dels disponibles es vol assignar o també es pot fer per codi:
+
+```ruby
+    Vagrant.configure("2") do |config|
+    config.vm.box = "generic/ubuntu1804"
+    config.vm.network "public_network", type: "dhcp", “bridge: "en0: Wi-Fi (AirPort)”
+```
+
+També es pot configurar en estàtic, però hi ha paràmetres que cal aprovisionar a la configuració de la màquina.
+
+[<< Tornar a índex](../readme.md)
+
+[>> AA3. Aprovisionament per scripts](scripting.md)

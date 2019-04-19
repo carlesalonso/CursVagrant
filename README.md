@@ -18,8 +18,8 @@
 ### AA3 Configuracions avançades
 
 1. [Modes de xarxa](AA3/xarxes.md)
-1. [Carpetes sincronitzades](AA3/folders.md)
-1. [Gestió dels boxes](AA3/boxes.md)
+1. [Aprovisionament amb scripts](AA3/scripting.md)
 1. [Entorns amb més d'una màquina](AA3/multimaquina.md)
+1. [Gestió dels boxes](AA3/boxes.md)
+1. [Carpetes sincronitzades](AA3/folders.md)
 1. [Aprovisionadors](AA3/provisioners.md)
-1. [Plugins](AA3/plugins.md)
