@@ -56,7 +56,9 @@ Si cal passar arguments, es poden passar de la següent manera:
       shell.inline = "echo $1"
       shell.args =["hola món"]
     end
-```
+````
+
+[Aquí](https://github.com/carlesalonso/vagrant-demo-web) podeu veure un repositori que conté un projecte Vagrant amb aprovisionament per script.
 
 [<< Tornar a índex AA3](../README.md)
 
