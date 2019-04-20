@@ -48,4 +48,4 @@ Clicant sobre l'enllaç podeu veure un exemple d'arxiu [Vagrantfile](Vagrantfile
 
 [Tornar a índex AA2](../README.md)
 
-[AA3 Configuracions avançaces](https://github.com/EPIAMataroDAM1SI/CursVagrant/tree/master/AA3)
+[Activitats per practicar](../X)
