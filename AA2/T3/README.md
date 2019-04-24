@@ -43,7 +43,7 @@ Ja veurem més endavant més informació de com mapejar entre màquina física i
 Per mapejar una carpeta a més de la per defecte, simplement cal obrir l'arxiu Vagrantfile i afegir la següent línia indicant la carpeta del vostre ordinador que voleu compartir (compte amb el doble \\) i la carpeta destinació dins la VM:
 
 ```bash
-    config.vm.synced_folder "C:\\Users\\usuari\Documents\\html", "/var/html"
+    config.vm.synced_folder "C:\\Users\\usuari\\Documents\\html", "/var/html"
 ```
 
 En el cas que hi treballeu des d'un ordinador *nix:
