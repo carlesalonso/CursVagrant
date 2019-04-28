@@ -100,7 +100,7 @@ Un cop fet podrem veure com apareix el nostre box
 
 ![Vagrant NewBox](pics/boxupdated.png)
 
-Existeixen serveis per empreses com [Artifactory](https://jfrog.com/artifactory/)que són una alternativa a Vagrant Cloud.
+Existeixen serveis com [Artifactory](https://jfrog.com/artifactory/) que tot i que no són específics per gestionar boxes de Vagrant poden ser una alternativa a Vagrant Cloud.
 
 [<< Tornar a índex AA3](../README.md)
 
