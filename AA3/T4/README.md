@@ -94,13 +94,13 @@ Finalment, haurem d'indicar el provider que s'ha d'utilitzar, en el nostre cas V
 
 Ja només queda pujar el box, però primer haurem de crear el box a partir de la instància que tenim, per fer això, cal usar la comanda *vagrant package --output alpinengix.box*  (el paquet es crea a la mateixa carpeta del projecte) i pujar-lo al servidor.
 
-![Vagrant NewBox](pics/newboxupload1.png)
+![Vagrant NewBox](pics/newboxupload.png)
 
 Un cop fet podrem veure com apareix el nostre box
 
 ![Vagrant NewBox](pics/boxupdated.png)
 
-Existeixen serveis per empreses com ![Artifactory](https://jfrog.com/artifactory/)que són una alternativa a Vagrant Cloud.
+Existeixen serveis per empreses com [Artifactory](https://jfrog.com/artifactory/)que són una alternativa a Vagrant Cloud.
 
 [<< Tornar a índex AA3](../README.md)
 
