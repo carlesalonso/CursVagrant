@@ -23,9 +23,11 @@ A partir d'aquí es poden definir configuracions *inline*:
 O utilitzar una configuració de bloc:
 
 ```ruby
-    config.vm.provision "shell" do |shell|
-        shell.inline = "apt update -y"
-    end
+    config.vm.provision "shell", inline: <<-SHELL
+        sudo yum install python  -y -q
+        sudo hostnamectl set-hostname python
+        sudo timedatectl set-timezone Europe/Madrid
+        SHELL
 ```
 
 Aquest model de bloc és més llegible, però per configuracions més complexes, seria molt més còmode utilitzar scripts. Per fer això, el format és com el del següente exemple on usem un script inline dins el Vagrantfile.
