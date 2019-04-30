@@ -48,7 +48,7 @@ Com exemple, instal·larem una extensió que millora la gestió de les instànci
     vagrant plugin install vagrant-alpine
 ```
 
-![PluginInstall](pics/pluginInstall.png)
+![PluginInstall](pics/pluginInstalled.png)
 
 Podem comprovar que s'ha instal·lat correctament amb la comanda *vagrant plugin list*:
 
