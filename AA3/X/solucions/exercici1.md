@@ -22,4 +22,4 @@ Un cop configurat, entrem amb ```vagrant ssh```i un cop dins instal·lem Apache2
 
 Un cop instal·lat, comprovem amb el navegador que ens podem connectar directament a la IP assignada.
 
-[Connexió a pàgina](pics/exercici1.png)
+![Connexió a pàgina](pics/exercici1.png)

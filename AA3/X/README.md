@@ -2,8 +2,7 @@
 
 1. Crear un entorn a partir d'un box que disposeu, per exemple bionic64. On definirem una xarxa privada, assignant la IP 192.168.168.100. Un cop aixecat l'entorn, connectar-se via ssh i instal·lar apache2. Comprovar com des del navegador des del vostre ordinador si poseu la IP anterior apareix la pàgina per defecte d'Apache [solució](solucions/exercici1.md)
 
-1. Definir un entorn a partir del box de bionic64 que tingueu, el qual aprovisionarem amb un script que anomenarem *bootstrap.sh* i que haurà de fer de fer la instal·lació de nginx,  i fer un enllaç simbòlic entre la carpeta *web* on tindreu un arxiu *index.html* amb la carpeta /var/www.
-[solució](solucions/exercici2.md)
+1. Definir un entorn a partir del box de bionic64 que tingueu, el qual aprovisionarem amb un script que anomenarem *bootstrap.sh* i que haurà de fer de fer la instal·lació de nginx,  i fer un enllaç simbòlic entre la carpeta *web* on tindreu un arxiu *index.html* amb la carpeta /var/www. [solució](solucions/exercici2.md)
 
 [<< Tornar a índex AA3](../README.md)
 
