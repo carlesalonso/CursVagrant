@@ -14,3 +14,7 @@ Algunes d'aquestes eines com Chef o Puppet requereixen que la màquina client ti
 La major part d'aquestes eines estan pensades per treballar des d'ordinadors Linux o Mac, per sort, ara amb Windows 10 podem utilitzar WSL per poder treballar amb les mateixes condicions.
 
 Cal destacar que no són eines específiques per Vagrant, són eines per automatitzar els desplegament de sistemes, permetent utilitzar codi per implementar infraestructures complexes, tant en servidors on-premise com al cloud (AWS,Azure o Google Cloud).
+
+[<< Tornar a índex AA3](../README.md)
+
+[>> AA3. Extensions](../T7)
