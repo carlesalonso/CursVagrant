@@ -81,3 +81,7 @@ Una característica és que permet excloure arxius o carpetes de la sincronitzac
 ```
 
 De la mateixa manera que els dos mètodes anteriors, a la guia oficial de Vagrant trobareu una explicació més detallada dels diferents arguments [link](https://www.vagrantup.com/docs/synced-folders/rsync.html).
+
+[<< Tornar a índex AA3](../README.md)
+
+[>> AA3. Aprovisionadors](../T6)

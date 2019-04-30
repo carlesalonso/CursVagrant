@@ -8,7 +8,7 @@ Normalment, per gestionar un programa i les seves dependències s'usen eines, en
 
 El primer que podem fer és veure la llista d'extensions o plugins que tenim instal·lat al nostre Vagrant:
 
-[!pluginlist](pics/pluginlist.png)
+![pluginlist](pics/pluginlist.png)
 
 ## Instal·lació d'extensions
 
@@ -48,11 +48,14 @@ Com exemple, instal·larem una extensió que millora la gestió de les instànci
     vagrant plugin install vagrant-alpine
 ```
 
-[!PluginInstall](pics/pluginInstall.png)
+![PluginInstall](pics/pluginInstall.png)
 
 Podem comprovar que s'ha instal·lat correctament amb la comanda *vagrant plugin list*:
 
-[!PluginAlpineInstalled](pics/pluginAlpine.png)
+![PluginAlpineInstalled](pics/pluginAlpine.png)
 
 Si ara obrim un projecte Alpine i el tanquem, podem comprovar que ara sí que es mapeja correctament la carpeta del projecte cap la carpeta */vagrant* de la màquina virtual. Així mateix, si fem *vagrant halt* la màquina es tanca correctament sense necessitat de forçar l'apagada.
 
+[<< Tornar a índex AA3](../README.md)
+
+[>> AA3. Exercicis resolts](../X)
