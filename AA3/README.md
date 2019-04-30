@@ -6,5 +6,6 @@
 1. [Gestió dels boxes](T4)
 1. [Carpetes sincronitzades](T5)
 1. [Aprovisionadors](T6)
+1. [Plugins](T7)
 
 [<< Tornar a índex principal](../README.md)

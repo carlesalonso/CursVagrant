@@ -24,4 +24,5 @@
 1. [Gestió dels boxes](AA3/T4)
 1. [Carpetes sincronitzades](AA3/T5)
 1. [Aprovisionadors](AA3/T6)
+1. [Plugins](AA3/T7)
 1. [Exercicis](AA3/X)
