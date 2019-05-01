@@ -30,6 +30,20 @@ En el cas del boxes que es troben a Vagrant Cloud, podem veure les diferents ver
 
 Per tant, si volem baixar la versió 3.6 enlloc de la més nova 3.7, farem servir la comanda però indicant la versió *vagrant box add alpine/alpine64 --box-version 3.6.0*.
 
+## Instal·lar un box des d'un fitxer local
+
+Si hem descarregat el box directament des del navegador o qualsevol altre sistema, per exemple, amb un pendrive, també podem podrem afegir el box al nostre sistema. Un cop hem posem a la carpeta on es troba l'arxiu .box que volem afegir farem la següent comanda *vagrant box add --name nom_del_box nomdelfitxerdelbox.box*. Per exemple:
+
+```bash
+    vagrant box add --name ubuntu/bionic64 ubuntu18.bionic64.box
+```
+
+Alternativament, es pot fer fent servir la següent comanda (suposant que l'arxiu es troba al disc D: i carpeta VagrantBoxes):
+
+```bash
+   vagrant box add ubuntu/bionic64 file:///D:/VagrantBoxes/ubuntu18.bionic64.box 
+```
+
 ## Eliminar un box
 
 Tot i que disposar de les diferents versions d'un box pot ser útil a l'hora de comprovar posibles incompatibilitats, al final, podem tenir el problema de de tenir el disc ple de versions obsoletes del box en qüestió, per tant, sovint és necessari eliminar versions antigues.
