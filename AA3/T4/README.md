@@ -116,6 +116,64 @@ Un cop fet podrem veure com apareix el nostre box
 
 Existeixen serveis com [Artifactory](https://jfrog.com/artifactory/) que tot i que no són específics per gestionar boxes de Vagrant poden ser una alternativa a Vagrant Cloud.
 
+## Crear un box des de una màquina virtual
+
+Tot i que no és una situació que us trobareu molt sovint, ja que l'habitual és partir d'un box base ja creat, també es pot definir un nou box des de zero (from scratch) partint d'una màquina virtual.
+
+Anem a veure els diferents pasos agafant com exemple un entorn Ubuntu (tot i que és extensible a qualsevol altre distribució Linux):
+
+* Partim de la màquina virtual i molt important **tenint les guest additions instal·lades**.
+
+* Tenim el sistema correctament actualitzat (*apt update* i després *apt upgrade dist-upgrade*)
+
+* Eliminar tots aquells elements no necessaris (USB, disquet, àudio, etc.).
+
+* Definir una configuració de RAM i disc el més ajustada possible. Per exemple, per un Ubuntu Server, la RAM segurament no té sentit que passi de 1024 MiB i el disc de 12 GiB (mode dinàmic).
+
+* Configurar la xarxa en NAT i configurar el reenviament de ports del port 22 al port 2222.
+
+* Crear l'usuari *vagrant* que és que utilitza l'aplicació i descarregar les claus de vagrant.
+
+```bash
+    useradd -m vagrant
+    su - vagrant
+    mkdir .ssh
+    wget https://raw.githubusercontent.com/mitchellh/vagrant/master/keys/vagrant.pub -O .ssh/authorized_keys
+    chmod 700 .ssh
+    chmod 600 .ssh/authorized_keys
+```
+
+* Cal afegir l'usuari *vagrant* al grup de sudoers (usuaris del sistema que poden elevar privilegis amb sudo). Per fer-ho tornem a sessió de root i fem:
+
+```bash
+    visudo
+```
+
+Ara escriure la següent línia i ens assegurem de comentar si existeix la línia corresponent a **requiretty**. Per editar, ens mourem fins la posició que vulguem escriure i aleshores premem la tecla de *INS*
+
+```bash
+    vagrant ALL=(ALL) NOPASSWD: ALL
+```
+
+Un cop escrit, amb *ESC* sortim del mode d'edició. Per sortir cal escriure *:wq*.
+
+Òbviament, cal instal·lar el servei *SSH* si no ho està ```apt install openssh-server```. Editem l'arxiu de configuració */etc/ssh/sshd_config* per afegir aquestes línies cal que no ho estiguin per defecte:
+
+```bash
+    AuthorizedKeysFile %h/.ssh/authorized_keys
+    UseDNS no
+````
+
+Reinciem el servei ```systemctl restart ssh```i apagar la màquina i apaguem la màquina virtual.
+
+* Empaquetem la màquina a un box:
+
+```bash
+    vagrant package --base miubuntu
+```
+
+Ja tenim un box preparat per ser afegit, pujat al cloud, etc.
+
 [<< Tornar a índex AA3](../README.md)
 
 [>> AA3. Carpetes Compartides](../T5)
