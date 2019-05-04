@@ -35,7 +35,7 @@ Aquí veiem un exemple d'arxiu Vagrantfile per definir una xarxa privada:
 
 Un cop iniciada la màquina, si ens connectem per ssh i mirem la configuració de xarxa, veurem quelcom similar a això:
 
-![private network](../pics/privateNetwork1.png)
+![private network](pics/privateNetwork1.png)
 
 on eth0 correspon a la interfície configurada amb NAT i eth1 a la xarxa privada.
 
