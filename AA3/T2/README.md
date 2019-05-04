@@ -60,7 +60,7 @@ Si cal passar arguments, es poden passar de la següent manera:
     end
 ````
 
-Si modifiquem la part corresponent a l'aprovisionament i volem simplement carregar aquesta part sense haver de parar la màquina, podem fer:
+L'aprovisionament es fa per defecte el primer cop que es crea la instància amb un *vagrant up*. Això vol dir que amb els reload o amb si fem *vagrant halt* i després *vagrant up*, per defecte no es torna a aprovisionar, excepte que forcem l'aprovisionament amb l'argument --provision. Si tenim la màquina encesa i només volem tornar a carregar l'aprovisionament, perquè, per exemple hem canviat alguna cosa, farem:
 
 ```bash
     vagrant provision
