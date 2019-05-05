@@ -6,7 +6,7 @@ La informació d'un box (metadades) es pot consultar mitjançanta la comanda *va
 
 ## Versionat de boxes
 
-Els box de Vagrant tenen la característica que estan versionats, això vol dir, que podrem tenir diverses versions d'un mateix box convivint en el mateix ordinador. Això vol dir que quan fem un *vagrant up* i Vagrant comprova si hi ha actualitzacions, cas de trobar-ne, les descarrega en forma d'un box nou, sense modificar els que ja estan descarregats.
+Els box de Vagrant tenen la característica que van versionats, això vol dir, que podrem tenir diverses versions d'un mateix box convivint en el mateix ordinador. Això vol dir que quan fem un *vagrant up* i Vagrant comprova si hi ha actualitzacions, cas de trobar-ne, les descarrega en forma d'un box nou, sense modificar els que ja estan descarregats.
 
 ## Descàrrega d'un box Vagrant
 
@@ -26,6 +26,8 @@ o bé usant una URL, en aquest cas cal posar un nom al box per ser identificat e
 
 En el cas del boxes que es troben a Vagrant Cloud, podem veure les diferents versions existents d'un mateix box i podem triar quina es baixa, si no s'especifica es baixarà la més nova.
 
+**Un tema important des del punt de vista de seguretat és usar preferentment boxes d'origien confiables. Eviteu baixar-vos arxius .box d'origen desconegut.**
+
 ![Vagrant Box Versions](pics/versions.png)
 
 Per tant, si volem baixar la versió 3.6 enlloc de la més nova 3.7, farem servir la comanda però indicant la versió *vagrant box add alpine/alpine64 --box-version 3.6.0*.
@@ -41,7 +43,7 @@ Si hem descarregat el box directament des del navegador o qualsevol altre sistem
 Alternativament, es pot fer fent servir la següent comanda (suposant que l'arxiu es troba al disc D: i carpeta VagrantBoxes):
 
 ```bash
-   vagrant box add ubuntu/bionic64 file:///D:/VagrantBoxes/ubuntu18.bionic64.box 
+   vagrant box add ubuntu/bionic64 file:///D:/VagrantBoxes/ubuntu18.bionic64.box
 ```
 
 ## Eliminar un box
