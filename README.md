@@ -26,3 +26,13 @@
 1. [Aprovisionadors](AA3/T6)
 1. [Plugins](AA3/T7)
 1. [Exercicis](AA3/X)
+
+### Referències i bibliografia
+
+1. *Documentation - Vagrant by HashiCorp*, Vagrant by HashiCorp, 2019. [Online]. Available: (<https://www.vagrantup.com/docs/).> [Consultat: 05 de maig del 2019]
+
+1. M. Hashimoto, *Vagrant - up and running*. Sebastopol, Calif: O'Reilly & Associates, 2013.
+
+1. W. Gajda, *Pro Vagrant*. Berkeley, CA: Apress, 2015.
+
+1. A. Braunton, *Hands-on DevOps with Vagrant*. Birmingham, UK: Packt Publishing, 2018.
