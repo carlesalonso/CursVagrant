@@ -46,6 +46,31 @@ La part final de la configuració correspon als aprovisionadors, que també veur
 
 Clicant sobre l'enllaç podeu veure un exemple d'arxiu [Vagrantfile](Vagrantfile) bàsic.
 
+Un cop editat l'arxiu *Vagrantfile* si voleu comprovar que no té errors sintàctics podeu fer servir la comanda:
+
+```bash
+    vagrant validate
+```
+
+Si el fitxer no té errors retornarà el següent missatge:
+
+```bash
+    Vagrantfile validated successfully.
+```
+
+Cas contrari mostra un missatge d'errors i el lloc on troba el problema, compte que pot ser que l'error hi sigui abans:
+
+```bash
+    Vagrant failed to initialize at a very early stage:
+
+    There is a syntax error in the following Vagrantfile. The syntax error message is reproduced below for convenience:
+
+    /Users/cam/Documents/Vagrant/examen/Vagrantfile:9: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+    config.vm.provision "shell", inline: <<-SHELL
+                               ^
+    /Users/cam/Documents/Vagrant/examen/Vagrantfile:9: unterminated string meets end of file
+```
+
 [Tornar a índex AA2](../README.md)
 
 [Activitats per practicar](../X)
