@@ -42,19 +42,25 @@ Ja veurem més endavant més informació de com mapejar entre màquina física i
 
 Per mapejar una carpeta a més de la per defecte, simplement cal obrir l'arxiu Vagrantfile i afegir la següent línia indicant la carpeta del vostre ordinador que voleu compartir (compte amb el doble \\) i la carpeta destinació dins la VM:
 
-```bash
+```ruby
     config.vm.synced_folder "C:\\Users\\usuari\\Documents\\html", "/var/html"
 ```
 
 En el cas que hi treballeu des d'un ordinador *nix:
 
-```bash
+```ruby
     config.vm.synced_folder "/home/usuari/html", "/var/html"
+```
+
+De tota manera, el més normal és mapejar carpetes que estiguin dins la carpeta principal del projecte, de manera que és més còmode usar rutes relatives:
+
+```ruby
+    config.vm.synced_folder "html/", "/var/html"
 ```
 
 Amb alguns box ens podem trobar que la redirecció de la carpeta per defecte no funcioni, si la això passa:
 
-```bash
+```ruby
     config.vm.synced_folder ".", "/vagrant"
 ```
 
