@@ -44,7 +44,7 @@ Aquest model de bloc és més llegible, però per configuracions més complexes,
 Però un dels principis del desenvolupament és el DRY (don't repeat yourshelf) i amb els scripts inline, em veig obligat a repetir les mateixes línies en diversos Vagrantfile. Seria molt més pràctic escriure els scripts en arxius i llençar-los durant l'aprovisionament:
 
 ```ruby
-    vm.provision :shell do |shell|
+    config.vm.provision :shell do |shell|
       shell.path = "install.sh"
     end
 ```
@@ -54,7 +54,7 @@ On en aquest cas l'script es troba a la carpeta de configuració del projecte. S
 Si cal passar arguments, es poden passar de la següent manera:
 
 ```ruby
-    vm.provision :shell do |shell|
+    config.vm.provision :shell do |shell|
       shell.inline = "echo $1"
       shell.args =["hola món"]
     end
