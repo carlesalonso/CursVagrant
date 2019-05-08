@@ -27,8 +27,6 @@
 1. [Plugins](AA3/T7)
 1. [Exercicis](AA3/X)
 
-### AA4 Opcions avançades
-
 ### Referències i bibliografia
 
 1. *Documentation - Vagrant by HashiCorp*, Vagrant by HashiCorp, 2019. [Online]. Available: (<https://www.vagrantup.com/docs/).> [Consultat: 05 de maig del 2019]
