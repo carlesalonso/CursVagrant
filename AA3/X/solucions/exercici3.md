@@ -7,7 +7,7 @@ En primer lloc definim l'arxiu Vagrantfile:
         config.vm.define "vm1" do |vm1|
             vm1.vm.box = "ubuntu/bionicl64"
             vm1.vm.network "private_network", ip: "192.168.100.100"
-            vm1.vm.synced_folder "web/", "/srv/web"
+            vm1.vm.synced_folder "web/web1", "/srv/web"
             vm1.vm.provision :shell do |shell|
                 shell.path = "bootstrap.sh"
             end
@@ -15,7 +15,7 @@ En primer lloc definim l'arxiu Vagrantfile:
         config.vm.define "vm2" do |vm2|
             vm2.vm.box = "ubuntu/bionic64"
             vm2.vm.network "private_network", ip: "192.168.100.102"
-            vm2.vm.synced_folder "web/", "/srv/web"
+            vm2.vm.synced_folder "web/web2", "/srv/web"
             vm2.vm.provision :shell do |shell|
                 shell.path = "bootstrap.sh"
             end
