@@ -43,4 +43,4 @@ Autor: Carlos Alonso Martínez
 
 [Reconeixement-NoComercial-SenseObraDerivada CC BY-NC-ND](https://creativecommons.org/licenses/by-nc-nd/4.0/legalcode)
 
-![CClogo](
+![CClogo](by-nc-nd.png)
