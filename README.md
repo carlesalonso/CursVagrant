@@ -36,3 +36,11 @@
 1. W. Gajda, *Pro Vagrant*. Berkeley, CA: Apress, 2015.
 
 1. A. Braunton, *Hands-on DevOps with Vagrant*. Birmingham, UK: Packt Publishing, 2018.
+
+## Llicència i atribució
+
+Autor: Carlos Alonso Martínez
+
+[Reconeixement-NoComercial-SenseObraDerivada CC BY-NC-ND](https://creativecommons.org/licenses/by-nc-nd/4.0/legalcode)
+
+![CClogo](
