@@ -30,7 +30,7 @@ Per tant, la forma habitual de connectar-nos serà:
     vagrant ssh vm1
 ```
 
-## Comunicacció entre màquines
+## Comunicació entre màquines
 
 Normalment, definirem una xarxa privada per tal que les màquines es comuniquin utilitzant adreces estàtiques, tal com es farà posteriorment a l'entorn de producció. Tot i que també, ho podem fer amb adreces públiques (bridged).
 
