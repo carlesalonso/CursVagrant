@@ -40,19 +40,7 @@ Un cop dins de la màquina si ens anem a la carpeta __/vagrant__, veurem que és
 
 Ja veurem més endavant més informació de com mapejar entre màquina física i virtual amb protocols com NFS, SMB o sincronització amb rsync, però de moment, utilitzarem el model de sincronització més senzill, que és utilitzar la funció de VirtualBox per mapejar carpetes.
 
-Per mapejar una carpeta a més de la per defecte, simplement cal obrir l'arxiu Vagrantfile i afegir la següent línia indicant la carpeta del vostre ordinador que voleu compartir (compte amb el doble \\) i la carpeta destinació dins la VM:
-
-```ruby
-    config.vm.synced_folder "C:\\Users\\usuari\\Documents\\html", "/var/html"
-```
-
-En el cas que hi treballeu des d'un ordinador *nix:
-
-```ruby
-    config.vm.synced_folder "/home/usuari/html", "/var/html"
-```
-
-De tota manera, el més normal és mapejar carpetes que estiguin dins la carpeta principal del projecte, de manera que és més còmode usar rutes relatives:
+Per mapejar una carpeta a més de la per defecte, simplement cal obrir l'arxiu Vagrantfile i afegir la següent línia indicant la ruta relativa que voleu compartir:
 
 ```ruby
     config.vm.synced_folder "html/", "/var/html"
