@@ -46,6 +46,8 @@ Per mapejar una carpeta a més de la per defecte, simplement cal obrir l'arxiu V
     config.vm.synced_folder "html/", "/var/html"
 ```
 
+També podem usar rutes absolutes, tot i que no té gaire sentit si volem exportar aquests projectes. En el cas de Windows, podem usar el format de rutes relatives indèntic a Linux o Mac, això ens permet no haver d'editar l'arxiu. Si volem usar rutes absolutes a Windows, aleshores sí que caldria usar la "\" com a separador, però tenint en compte que com es la barra invertida és el caràcter d'escapament, cal doblar-la per indicar una ruta.
+
 Amb alguns box ens podem trobar que la redirecció de la carpeta per defecte no funcioni, si la això passa:
 
 ```ruby
