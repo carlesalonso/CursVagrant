@@ -1,9 +1,5 @@
 # Curs bàsic de Vagrant
 
-## Sistemes Informàtics. UF3
-
-## CFGS DAM
-
 ### AA1 Introducció
 
 1. [Introducció a Vagrant](AA1)
