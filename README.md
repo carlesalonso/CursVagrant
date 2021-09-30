@@ -1,6 +1,6 @@
-# Curs bàsic de Vagrant
-
 ![Vagrant Logo](https://www.vagrantup.com/img/logo-hashicorp.svg)
+
+# Curs bàsic
 
 ### AA1 Introducció
 
