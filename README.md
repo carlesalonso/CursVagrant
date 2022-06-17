@@ -1,4 +1,4 @@
-![Vagrant Logo](https://www.vagrantup.com/img/logo-hashicorp.svg)
+![Vagrant Logo]([https://www.vagrantup.com/vagrant/img/logo-hashicorp.svg])
 
 # Curs bàsic
 
