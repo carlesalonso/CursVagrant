@@ -1,12 +1,14 @@
-![Vagrant Logo](https://www.vagrantup.com/vagrant/img/logo-hashicorp.svg)
+# Curs bàsic de Vagrant
 
-# Curs bàsic
+![Vagrant](https://img.shields.io/badge/Vagrant-0078D6?style=for-the-badge&logo=vagrant&logoColor=white)
+![DevOps](https://img.shields.io/badge/DevOps-23170?style=for-the-badge&logo=devops&logoColor=white)
+![Linux](https://img.shields.io/badge/Linux-FCC624?style=for-the-badge&logo=linux&logoColor=black)
 
-### AA1 Introducció
+## AA1 Introducció
 
 1. [Introducció a Vagrant](AA1)
 
-### AA2 Ús bàsic de Vagrant
+## AA2 Ús bàsic de Vagrant
 
 1. [Instal·lació](AA2/T1)
 1. [Comandes bàsiques](AA2/T2)
@@ -14,7 +16,7 @@
 1. [Definició dels entorns: Vagrantfile](AA2/T4)
 1. [Exercicis](AA2/X)
 
-### AA3 Configuracions
+## AA3 Configuracions
 
 1. [Modes de xarxa](AA3/T1)
 1. [Aprovisionament amb scripts](AA3/T2)
@@ -25,7 +27,7 @@
 1. [Plugins](AA3/T7)
 1. [Exercicis](AA3/X)
 
-### Referències i bibliografia
+## Referències i bibliografia
 
 1. *Documentation - Vagrant by HashiCorp*, Vagrant by HashiCorp, 2019. [Online]. Available: (<https://www.vagrantup.com/docs/).> [Consultat: 05 de maig del 2019]
 
@@ -37,7 +39,7 @@
 
 ## Llicència i atribució
 
-Autor: Carlos Alonso Martínez
+Autor: Carlos Alonso Martínez 2022
 
 [Reconeixement-NoComercial-SenseObraDerivada CC BY-NC-ND](https://creativecommons.org/licenses/by-nc-nd/4.0/legalcode)
 
